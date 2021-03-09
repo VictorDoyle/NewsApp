@@ -1,22 +1,38 @@
+/* base */
 import React from 'react';
 import { SafeAreaView } from 'react-native';
-import { Button, Divider, Layout, TopNavigation } from '@ui-kitten/components';
+import { Divider, Icon, Layout, Text, TopNavigation, TopNavigationAction } from '@ui-kitten/components';
 
-export const Homepage = ({ navigation }) => {
 
-  const navigateMainFeed = () => {
-    navigation.navigate('MainFeed');
-  };
+/* atoms */
 
+/* molecules */
+
+
+
+const BackIcon = (props) => (
+  <Icon {...props} name='arrow-back' />
+);
+
+export const HomePage = ({ navigation }) => {
+
+  /* return button */
+/*   const navigateBack = () => {
+    navigation.goBack();
+  }; */
+/*   const BackAction = () => (
+    <TopNavigationAction icon={BackIcon} onPress={navigateBack}/>
+  );
+ */
   return (
     <SafeAreaView style={{ flex: 1 }}>
-      <TopNavigation title='MyApp' alignment='center'/>
+      
       <Divider/>
       <Layout style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-        <Button onPress={navigateMainFeed}>OPEN MAIN FEED</Button>
+        <Text category='h1'>DETAILS</Text>
       </Layout>
     </SafeAreaView>
   );
 };
 
-export default Homepage
+export default HomePage

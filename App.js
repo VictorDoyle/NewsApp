@@ -3,7 +3,7 @@ import * as React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 /* pages */
-import HomePage from './components/pages/HomePage'
+import HomePage from './components/pages/LandingPage'
 /* vendor modules css lib */
 import * as eva from '@eva-design/eva';
 import { ApplicationProvider, IconRegistry, Layout, Text } from '@ui-kitten/components';
@@ -27,8 +27,8 @@ import {
   DebugInstructions,
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
-import Homepage from './components/pages/HomePage';
-import MainFeed from './components/pages/MainFeed';
+import LandingPage from './components/pages/LandingPage';
+import Homepage from './components/pages/Homepage';
 const Stack = createStackNavigator();
 
 const MyStack = ({ navigation }) => {
@@ -36,10 +36,10 @@ const MyStack = ({ navigation }) => {
 
       <Stack.Navigator>
         <Stack.Screen
-          name="Home"
-          component={Homepage}
+          name="Welcome"
+          component={LandingPage}
         />
-        <Stack.Screen name="MainFeed" component={MainFeed} />
+        <Stack.Screen name="Home" component={Homepage} />
       </Stack.Navigator>
 
   );
