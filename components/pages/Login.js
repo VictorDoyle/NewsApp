@@ -5,14 +5,9 @@ import { Divider, Button, ButtonGroup, Icon, Layout, Text,BottomNavigation, Bott
 /* atoms */
 
 /* molecules */
-import IntroButtons from "../molecules/Introduction"
 
 
-/* const BackIcon = (props) => (
-  <Icon {...props} name='arrow-back' />
-);
- */
-const HomePage = ({ navigation }) => {
+const Login = ({ navigation }) => {
 
 
           /* return button */
@@ -32,8 +27,7 @@ const HomePage = ({ navigation }) => {
       <Divider/>
               
     
-
-            <IntroButtons />         
+      
       
 
              
@@ -42,7 +36,7 @@ const HomePage = ({ navigation }) => {
   );
 };
 
-export default HomePage
+export default Login
 
 
 

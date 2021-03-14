@@ -29,6 +29,7 @@ import {
 } from 'react-native/Libraries/NewAppScreen';
 import LandingPage from './components/pages/LandingPage';
 import Homepage from './components/pages/Homepage';
+import Login from './components/pages/Login';
 const Stack = createStackNavigator();
 
 const MyStack = ({ navigation }) => {
@@ -40,6 +41,7 @@ const MyStack = ({ navigation }) => {
           component={LandingPage}
         />
         <Stack.Screen name="Home" component={Homepage} />
+        <Stack.Screen name="Login" component={Login}/>
       </Stack.Navigator>
 
   );
